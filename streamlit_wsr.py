@@ -1,7 +1,10 @@
 # WSR Project 
 import streamlit as st
 #import snowflake.connector
-
+if "visibility" not in st.session_state:
+    st.session_state.visibility = "visible"
+    st.session_state.disabled = False
+   
 st.title('WSR Reporting Tool')
 
 #color = st.color_picker('Current Status of the project', '#00f900')
