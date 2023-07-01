@@ -42,8 +42,9 @@ col1, col2 = st.columns(2)
 with col1:
    st.text_input(
         "Engagement Summary",
-        "Please enter the summary ",
-        key="placeholder",)
+        label_visibility=st.session_state.visibility,
+        disabled=st.session_state.disabled,
+        placeholder='Please enter the summary of the project',)
 with col2:
    st.text_input(
         "Tech Stack",
