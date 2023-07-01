@@ -17,7 +17,7 @@ with col1:
    st.date_input('SOW End Date')
 
 with col2:
-   st.image("https://static.streamlit.io/examples/dog.jpg")
+   st.image("https://static.wixstatic.com/media/b75d87_9ec065c9fb634ed2a8a1f636c53524e0~mv2.png/v1/fill/w_1000,h_1000,al_c/b75d87_9ec065c9fb634ed2a8a1f636c53524e0~mv2.png")
 
 with col3:
    st.date_input('WSR End Date')
