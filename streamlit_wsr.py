@@ -12,8 +12,6 @@ with col1:
     'Client & Project',
     ('MGM', 'Segdewick', 'Juvo'))
 
-   st.write('Client selected : ', option)
-
    st.date_input('SOW Start Date')
 
    st.date_input('SOW End Date')
@@ -25,8 +23,12 @@ with col3:
    st.date_input('WSR End Date')
    st.write('WSR STATUS : ', 'GREEN')
 
+col1, col2 = st.columns(2)
 
-score = st.slider(' Status of the Project', 0, 100, 10)
+with col1:
+   st.slider(' Status of the Project', 0, 100, 10)
+with col2:
+   st.write('Team')
 
 #if st.button('Save'):
  #   st.write('Updating the table with the changes')
