@@ -15,6 +15,5 @@ st.date_input('Project Start Date')
 st.date_input('SOW End Date')
 
 
-score = st.slider('Please specify your test score', 0, 100, 10)
-st.write("My test score is ", score)
+score = st.slider(' Status of the Project', 0, 100, 10)
 
