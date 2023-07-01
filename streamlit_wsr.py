@@ -1,6 +1,6 @@
 # WSR Project 
 import streamlit as st
-import snowflake.connector
+#import snowflake.connector
 
 st.title('WSR Reporting Tool')
 
