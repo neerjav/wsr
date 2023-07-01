@@ -8,8 +8,6 @@ st.title('WSR Reporting Tool')
 
 col1, col2, col3 = st.columns(3)
 with col1:
-   st.header("A cat")
-   st.image("https://static.streamlit.io/examples/cat.jpg")
    option = st.selectbox(
     'Client & Project',
     ('MGM', 'Segdewick', 'Juvo'))
@@ -21,22 +19,23 @@ with col1:
    st.date_input('SOW End Date')
 
 with col2:
-   st.header("A dog")
    st.image("https://static.streamlit.io/examples/dog.jpg")
-
-with col3:
-   st.header("An owl")
    st.image("https://static.streamlit.io/examples/owl.jpg")
 
+with col3:
+   st.date_input('WSR End Date')
+   st.write('WSR STATUS : ', 'GREEN')
+
+
+   
+
 
 
 
 #st.image()
 #st.image()
 
-st.write('WSR STATUS : ', 'GREEN')
 
-st.date_input('WSR End Date')
 
 score = st.slider(' Status of the Project', 0, 100, 10)
 
