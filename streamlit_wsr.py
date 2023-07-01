@@ -100,3 +100,7 @@ st.markdown(hide_table_row_index, unsafe_allow_html=True)
 st.table(df)
 
 
+edited_df = st.experimental_data_editor(df)
+favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
+st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
+
