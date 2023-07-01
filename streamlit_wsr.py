@@ -12,7 +12,9 @@ option = st.selectbox(
     'Please choose a project to view the details',
     ('MGM', 'Segdewick', 'Juvo'))
 
-st.date_input('Project start end')
+st.date_input('Project Start Date')
+
+st.date_input('SOW End Date')
 
 
 score = st.slider('Please specify your test score', 0, 100, 10)
