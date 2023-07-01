@@ -31,9 +31,17 @@ score = st.slider(' Status of the Project', 0, 100, 10)
 #if st.button('Cancel'):
  #   st.write('No updates to the table')
 
-button_text = "Save", "Cancel"
+#button_text = "Save", "Cancel"
 
-for text, col in zip(button_text, st.columns(len(button_text))):
-    if col.button(text):
-        col.write(f"{text} clicked")
+#for text, col in zip(button_text, st.columns(len(button_text))):
+#    if col.button(text):
+ #       col.write(f"{text} clicked")
+
+col1, col2, col3 = st.columns([1,1,1])
+
+with col1:
+    st.button('Save')
+with col2:
+    st.button('Cancel')
+
 
