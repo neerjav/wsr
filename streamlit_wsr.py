@@ -18,10 +18,9 @@ st.date_input('SOW Start Date')
 st.date_input('SOW End Date')
 
 #st.image()
-#St.image()
+#st.image()
 
-wsr_status = st.text('GREEN')
-st.write('Client selected : ', wsr_status)
+st.write('wsr_status : ', 'GREEN')
 
 st.date_input('WSR End Date')
 
