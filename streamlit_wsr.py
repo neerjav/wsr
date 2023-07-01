@@ -66,12 +66,7 @@ with col2:
 #    if col.button(text):
  #       col.write(f"{text} clicked")
 
-col1, col2 = st.columns([0.12,1])
 
-with col1:
-    st.button('Save')
-with col2:
-    st.button('Cancel')
 
 st.header('Key Accomplishments of the Week')
 
@@ -104,3 +99,9 @@ st.table(df)
 #favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
 #st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
 
+col1, col2 = st.columns([0.12,1])
+
+with col1:
+    st.button('Save')
+with col2:
+    st.button('Cancel')
