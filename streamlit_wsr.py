@@ -8,15 +8,22 @@ st.title('WSR Reporting Tool')
 
 
 option = st.selectbox(
-    'Please choose a project to view the details',
+    'Client & Project',
     ('MGM', 'Segdewick', 'Juvo'))
 
 st.write('Client selected : ', option)
 
-st.date_input('Project Start Date')
+st.date_input('SOW Start Date')
 
 st.date_input('SOW End Date')
 
+#st.image()
+#St.image()
+
+wsr_status = st.text('GREEN')
+st.write('Client selected : ', wsr_status)
+
+st.date_input('WSR End Date')
 
 score = st.slider(' Status of the Project', 0, 100, 10)
 
