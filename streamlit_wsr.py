@@ -31,8 +31,11 @@ col1, col2 = st.columns(2)
 with col1:
    st.slider(' Status of the Project', 0, 100, 10)
 with col2:
-   st.write('Team')
-   st.write(' Team is of 5 members')
+   st.text_input(
+        "Team Details",
+        label_visibility=st.session_state.visibility,
+        disabled=st.session_state.disabled,
+        placeholder='Enter the team info',)
 
 col1, col2 = st.columns(2)
 
