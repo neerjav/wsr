@@ -10,6 +10,8 @@ option = st.selectbox(
     'Please choose a project to view the details',
     ('MGM', 'Segdewick', 'Juvo'))
 
+st.write('Client selected ',option)
+
 st.date_input('Project Start Date')
 
 st.date_input('SOW End Date')
