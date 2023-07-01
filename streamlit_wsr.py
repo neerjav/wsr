@@ -1,11 +1,9 @@
 # WSR Project 
 import streamlit as st
 
-st.title('WSR Report')
+st.title('WSR Reporting Tool')
 
-
-
-color = st.color_picker('Current Status of the project', '#00f900')
+#color = st.color_picker('Current Status of the project', '#00f900')
 
 
 option = st.selectbox(
