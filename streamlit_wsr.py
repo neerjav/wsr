@@ -1,5 +1,6 @@
 # WSR Project 
 import streamlit as st
+import snowflake.connector
 
 st.title('WSR Reporting Tool')
 
@@ -18,4 +19,7 @@ st.date_input('SOW End Date')
 
 
 score = st.slider(' Status of the Project', 0, 100, 10)
+
+if st.button('Save'):
+    st.write('Updating the table with the changes')
 
