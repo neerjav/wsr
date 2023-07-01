@@ -41,8 +41,9 @@ with col1:
 with col2:
    st.text_input(
         "Tech Stack",
-        "Enter the tech stack used",
-        key="placeholder",)
+        label_visibility=st.session_state.visibility,
+        disabled=st.session_state.disabled,
+        placeholder=st.session_state.placeholder,)
 
 #if st.button('Save'):
  #   st.write('Updating the table with the changes')
