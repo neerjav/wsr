@@ -1,6 +1,9 @@
 # WSR Project 
 import streamlit as st
-#import snowflake.connector
+#import snowflake.connectory 
+import pandas as pd
+import numpy as np
+
 if "visibility" not in st.session_state:
     st.session_state.visibility = "visible"
     st.session_state.disabled = False
@@ -69,5 +72,21 @@ with col1:
     st.button('Save')
 with col2:
     st.button('Cancel')
+
+st.header('Key Accomplishments of the Week')
+
+#creating a sample dataframe 
+
+df = pd.DataFrame(
+
+    np.random.randn(7, 5),
+
+    columns=('col %d' % i for i in range(5)))
+
+
+
+#displaying the dataframe in a static manner
+
+st.table(df)
 
 
