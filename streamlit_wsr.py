@@ -31,6 +31,13 @@ with col2:
    st.write('Team')
    st.write(' Team is of 5 members')
 
+col1, col2 = st.columns(2)
+
+with col1:
+   st.write('Engagement Summary')
+with col2:
+   st.write('Tech Stack')
+
 #if st.button('Save'):
  #   st.write('Updating the table with the changes')
 #if st.button('Cancel'):
