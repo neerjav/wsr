@@ -1,7 +1,9 @@
 # WSR Project 
 import streamlit as st
 
-st.header('WSR Report')
+st.title('WSR Report')
+
+
 
 color = st.color_picker('Current Status of the project', '#00f900')
 
@@ -9,6 +11,8 @@ color = st.color_picker('Current Status of the project', '#00f900')
 option = st.selectbox(
     'Please choose a project to view the details',
     ('MGM', 'Segdewick', 'Juvo'))
+
+st.date_input('Project start end')
 
 
 score = st.slider('Please specify your test score', 0, 100, 10)
