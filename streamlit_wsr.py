@@ -81,7 +81,7 @@ df = pd.DataFrame(
 
     np.random.randn(7, 5),
 
-    columns=('col %d' % i for i in range(3)))
+    columns=('col %d' % i for i in range(5)))
 
 
 
