@@ -20,7 +20,7 @@ st.date_input('SOW End Date')
 #st.image()
 #st.image()
 
-st.write('wsr_status : ', 'GREEN')
+st.write('WSR STATUS : ', 'GREEN')
 
 st.date_input('WSR End Date')
 
@@ -28,4 +28,6 @@ score = st.slider(' Status of the Project', 0, 100, 10)
 
 if st.button('Save'):
     st.write('Updating the table with the changes')
+if st.button('Cancel'):
+    st.write('No updates to the table')
 
