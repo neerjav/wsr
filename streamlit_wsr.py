@@ -26,8 +26,14 @@ st.date_input('WSR End Date')
 
 score = st.slider(' Status of the Project', 0, 100, 10)
 
-if st.button('Save'):
-    st.write('Updating the table with the changes')
-if st.button('Cancel'):
-    st.write('No updates to the table')
+#if st.button('Save'):
+ #   st.write('Updating the table with the changes')
+#if st.button('Cancel'):
+ #   st.write('No updates to the table')
+
+button_text = "Save", "Cancel"
+
+for text, col in zip(button_text, st.columns(len(button_text))):
+    if col.button(text):
+        col.write(f"{text} clicked")
 
