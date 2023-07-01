@@ -20,21 +20,10 @@ with col1:
 
 with col2:
    st.image("https://static.streamlit.io/examples/dog.jpg")
-   st.image("https://static.streamlit.io/examples/owl.jpg")
 
 with col3:
    st.date_input('WSR End Date')
    st.write('WSR STATUS : ', 'GREEN')
-
-
-   
-
-
-
-
-#st.image()
-#st.image()
-
 
 
 score = st.slider(' Status of the Project', 0, 100, 10)
