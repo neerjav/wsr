@@ -29,6 +29,7 @@ with col1:
    st.slider(' Status of the Project', 0, 100, 10)
 with col2:
    st.write('Team')
+   st.write(' Team is of 5 members')
 
 #if st.button('Save'):
  #   st.write('Updating the table with the changes')
