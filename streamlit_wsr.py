@@ -34,9 +34,15 @@ with col2:
 col1, col2 = st.columns(2)
 
 with col1:
-   st.write('Engagement Summary')
+   st.text_input(
+        "Engagement Summary",
+        "Please enter the summary ",
+        key="placeholder",)
 with col2:
-   st.write('Tech Stack')
+   st.text_input(
+        "Tech Stack",
+        "Enter the tech stack used",
+        key="placeholder",)
 
 #if st.button('Save'):
  #   st.write('Updating the table with the changes')
